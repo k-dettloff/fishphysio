@@ -89,18 +89,18 @@ regIndex = function(kpa, MO2, period, plot = TRUE) {
                   colour = "blue") +
       geom_segment(x = 0, y = 0,
                    xend = conf_means[["kpa"]], yend = conf_means[["MO2"]],
-                   size = 1, lty = 2) +
+                   linewidth = 1, lty = 2) +
       geom_segment(x = 0, y = conf_means[["MO2"]],
                    xend = conf_means[["kpa"]], yend = conf_means[["MO2"]],
-                   lty = 2, size = 1) +
-      geom_segment(x = 0, y = MO2_50, xend = p50, yend = MO2_50, colour = "red", size = 1) +
-      geom_segment(x = p50, y = 0, xend = p50, yend = MO2_50, colour = "red", size = 1) +
+                   lty = 2, linewidth = 1) +
+      geom_segment(x = 0, y = MO2_50, xend = p50, yend = MO2_50, colour = "red", linewidth = 1) +
+      geom_segment(x = p50, y = 0, xend = p50, yend = MO2_50, colour = "red", linewidth = 1) +
       scale_x_continuous(expand = c(0, 0), labels = scales::comma) +
       scale_y_continuous(expand = c(0, 0), labels = scales::comma) +
       coord_cartesian(xlim = c(0, pretty(max(data$kpa), n = 10)[pretty(max(data$kpa), n = 10) > max(data$kpa)][1]),
                       ylim = c(0, pretty(max(data$MO2), n = 10)[pretty(max(data$MO2), n = 10) > max(data$MO2)][1])) +
       labs(x = "kpa", y = expression(ring(M)*O[2])) +
-      theme_classic()
+      theme_classic(base_size = 12)
 
     list(`coefficients` = round(fitted_coefs, 3), `pseudo R2` = R2,
          `regulation index` = reg_ind, p50 = round(p50, 3), plot = p)
