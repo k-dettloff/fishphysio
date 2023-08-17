@@ -6,7 +6,7 @@
 #' @param period vector coded to indicate measurements under "SMR"
 #' @param plot should a plot of the fitted function be produced?
 #'
-#' @return list containing fitted model coefficients, Efron's pseudo R2, regulation index, and p50
+#' @return List containing fitted model coefficients, Efron's pseudo R2, regulation index, and p50
 #' @export
 #' @examples
 #' \dontrun{
