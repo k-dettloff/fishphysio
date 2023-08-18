@@ -16,10 +16,10 @@ regIndex(kpa, MO2, period, plot = TRUE)
 \item{plot}{should a plot of the fitted function be produced?}
 }
 \value{
-list containing fitted model coefficients, Efron's pseudo R2, regulation index, and p50
+List containing fitted model coefficients, Efron's pseudo R2, regulation index, and p50
 }
 \description{
-Calculate fish osmoregulation index according to fitted cubic function
+Calculate fish osmoregulation index according to a fitted cubic function of MO2 vs. kpa and produce associated plot.
 }
 \examples{
 \dontrun{
