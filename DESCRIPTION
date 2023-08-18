@@ -4,7 +4,7 @@ Title: Calculate Fish Osmoregulation Indices
 Version: 0.1.0
 Author: Kyle Dettloff
 Maintainer: Kyle Dettloff <kyle.dettloff@noaa.gov>
-Description: Calculate fish osmoregulation index according to a specified function and produces associated plots.
+Description: Calculate fish osmoregulation index according to a fitted cubic function of MO2 vs. kpa and produce associated plot.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
