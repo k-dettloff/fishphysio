@@ -1,5 +1,7 @@
 #' Calculate fish osmoregulation index according to fitted cubic function
 #'
+#' @description Calculate fish osmoregulation index according to a fitted cubic function of MO2 vs. kpa and produce associated plot.
+#'
 #' @import ggplot2
 #' @param kpa vector of kpa (x)
 #' @param MO2 vector of MO2 (y)
